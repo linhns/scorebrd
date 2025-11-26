@@ -1,0 +1,84 @@
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    background-color: #1B244A;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.entry {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+.entry-name-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+
+    text-transform: uppercase;
+}
+
+.score-display {
+    background-color: #080001;
+    min-width: 150px;
+    height: 120px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    padding-inline: 5px;
+}
+
+.score-text {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 5.625rem;
+    height: 5rem;
+
+    color: #F94F6D;
+}
+
+.button-bar {
+    display: flex;
+    gap: 9px;
+}
+
+.button-bar>button {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    background: transparent;
+    width: 45px;
+    height: 45px;
+}
+
+.button-bar>button:hover {
+    color: #F94F6D;
+    border: 2px solid #F94F6D;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+}
