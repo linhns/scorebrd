@@ -10,7 +10,7 @@ const ButtonBar = React.memo(function({ addScore }: ButtonBarProps) {
             <button key={v} onClick={() => addScore(v)}>{`+${v}`}</button>
         )
     })
-    console.log("Button Bar rerendered")
+
     return (
         <section className="button-bar">
             {btnElements}
